@@ -18,44 +18,43 @@ Secret for MongoDB password
 
 Apply the ConfigMap:
 
-Copy
+````
 kubectl apply -f ConfigMap.yaml
 ````
 
 Apply the Secret:
-
-Copy
+````
 kubectl apply -f secret.yaml
 ````
 
 Apply the Persistent Volume:
 
-Copy
+````
 kubectl apply -f pv.yaml
 ````
 
 Apply the Persistent Volume Claim:
 
-Copy
+````
 kubectl apply -f pvc.yaml
 ````
 
 Apply the MongoDB resources:
 
-Copy
+````
 kubectl apply -f mongodb-deployment.yml
 ````
 
 Apply the MongoExpress resources:
 
-Copy
+````
 kubectl apply -f mongoExpress-deployment.yml  
 ````
 
 
 Get the MongoExpress URL:
 
-Copy
+````
 kubectl get svc mongo-express
 ````
 
